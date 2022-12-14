@@ -91,10 +91,10 @@
             this.radioButton3.Location = new System.Drawing.Point(5, 62);
             this.radioButton3.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(60, 17);
+            this.radioButton3.Size = new System.Drawing.Size(58, 17);
             this.radioButton3.TabIndex = 2;
             this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "слегка";
+            this.radioButton3.Text = "Slightly";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // radioButton2
@@ -103,10 +103,10 @@
             this.radioButton2.Location = new System.Drawing.Point(5, 40);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(54, 17);
+            this.radioButton2.Size = new System.Drawing.Size(46, 17);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "очень";
+            this.radioButton2.Text = "Very";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // radioButton1
@@ -116,10 +116,10 @@
             this.radioButton1.Location = new System.Drawing.Point(5, 18);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(37, 17);
+            this.radioButton1.Size = new System.Drawing.Size(42, 17);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "не";
+            this.radioButton1.Text = "Not";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // groupBox2
@@ -134,7 +134,8 @@
             this.groupBox2.Size = new System.Drawing.Size(105, 84);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Свойство 1";
+            this.groupBox2.Text = "Property 1";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // radioButton4
             // 
@@ -142,10 +143,10 @@
             this.radioButton4.Location = new System.Drawing.Point(5, 62);
             this.radioButton4.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(81, 17);
+            this.radioButton4.Size = new System.Drawing.Size(45, 17);
             this.radioButton4.TabIndex = 2;
             this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "маленький";
+            this.radioButton4.Text = "Low";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
             // radioButton5
@@ -154,10 +155,10 @@
             this.radioButton5.Location = new System.Drawing.Point(5, 40);
             this.radioButton5.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(67, 17);
+            this.radioButton5.Size = new System.Drawing.Size(65, 17);
             this.radioButton5.TabIndex = 1;
             this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "средний";
+            this.radioButton5.Text = "Average";
             this.radioButton5.UseVisualStyleBackColor = true;
             // 
             // radioButton6
@@ -167,10 +168,10 @@
             this.radioButton6.Location = new System.Drawing.Point(5, 18);
             this.radioButton6.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(69, 17);
+            this.radioButton6.Size = new System.Drawing.Size(47, 17);
             this.radioButton6.TabIndex = 0;
             this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "высокий";
+            this.radioButton6.Text = "High";
             this.radioButton6.UseVisualStyleBackColor = true;
             // 
             // groupBox3
@@ -185,7 +186,7 @@
             this.groupBox3.Size = new System.Drawing.Size(105, 84);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Союз";
+            this.groupBox3.Text = "Union";
             // 
             // radioButton7
             // 
@@ -193,10 +194,10 @@
             this.radioButton7.Location = new System.Drawing.Point(5, 62);
             this.radioButton7.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(43, 17);
+            this.radioButton7.Size = new System.Drawing.Size(34, 17);
             this.radioButton7.TabIndex = 2;
             this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "или";
+            this.radioButton7.Text = "or";
             this.radioButton7.UseVisualStyleBackColor = true;
             // 
             // radioButton8
@@ -205,10 +206,10 @@
             this.radioButton8.Location = new System.Drawing.Point(5, 40);
             this.radioButton8.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(31, 17);
+            this.radioButton8.Size = new System.Drawing.Size(43, 17);
             this.radioButton8.TabIndex = 1;
             this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "и";
+            this.radioButton8.Text = "and";
             this.radioButton8.UseVisualStyleBackColor = true;
             // 
             // radioButton9
@@ -245,10 +246,10 @@
             this.radioButton10.Location = new System.Drawing.Point(5, 62);
             this.radioButton10.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(60, 17);
+            this.radioButton10.Size = new System.Drawing.Size(58, 17);
             this.radioButton10.TabIndex = 2;
             this.radioButton10.TabStop = true;
-            this.radioButton10.Text = "слегка";
+            this.radioButton10.Text = "Slightly";
             this.radioButton10.UseVisualStyleBackColor = true;
             // 
             // radioButton11
@@ -257,10 +258,10 @@
             this.radioButton11.Location = new System.Drawing.Point(5, 40);
             this.radioButton11.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(54, 17);
+            this.radioButton11.Size = new System.Drawing.Size(46, 17);
             this.radioButton11.TabIndex = 1;
             this.radioButton11.TabStop = true;
-            this.radioButton11.Text = "очень";
+            this.radioButton11.Text = "Very";
             this.radioButton11.UseVisualStyleBackColor = true;
             // 
             // radioButton12
@@ -270,10 +271,10 @@
             this.radioButton12.Location = new System.Drawing.Point(5, 18);
             this.radioButton12.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(37, 17);
+            this.radioButton12.Size = new System.Drawing.Size(42, 17);
             this.radioButton12.TabIndex = 0;
             this.radioButton12.TabStop = true;
-            this.radioButton12.Text = "не";
+            this.radioButton12.Text = "Not";
             this.radioButton12.UseVisualStyleBackColor = true;
             // 
             // groupBox5
@@ -289,7 +290,8 @@
             this.groupBox5.Size = new System.Drawing.Size(105, 84);
             this.groupBox5.TabIndex = 4;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Свойство 2";
+            this.groupBox5.Text = "Property 2";
+            this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
             // radioButton13
             // 
@@ -297,10 +299,10 @@
             this.radioButton13.Location = new System.Drawing.Point(5, 62);
             this.radioButton13.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton13.Name = "radioButton13";
-            this.radioButton13.Size = new System.Drawing.Size(81, 17);
+            this.radioButton13.Size = new System.Drawing.Size(45, 17);
             this.radioButton13.TabIndex = 2;
             this.radioButton13.TabStop = true;
-            this.radioButton13.Text = "маленький";
+            this.radioButton13.Text = "Low";
             this.radioButton13.UseVisualStyleBackColor = true;
             // 
             // radioButton14
@@ -309,10 +311,10 @@
             this.radioButton14.Location = new System.Drawing.Point(5, 40);
             this.radioButton14.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton14.Name = "radioButton14";
-            this.radioButton14.Size = new System.Drawing.Size(67, 17);
+            this.radioButton14.Size = new System.Drawing.Size(65, 17);
             this.radioButton14.TabIndex = 1;
             this.radioButton14.TabStop = true;
-            this.radioButton14.Text = "средний";
+            this.radioButton14.Text = "Average";
             this.radioButton14.UseVisualStyleBackColor = true;
             // 
             // radioButton15
@@ -322,10 +324,10 @@
             this.radioButton15.Location = new System.Drawing.Point(5, 18);
             this.radioButton15.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton15.Name = "radioButton15";
-            this.radioButton15.Size = new System.Drawing.Size(69, 17);
+            this.radioButton15.Size = new System.Drawing.Size(47, 17);
             this.radioButton15.TabIndex = 0;
             this.radioButton15.TabStop = true;
-            this.radioButton15.Text = "высокий";
+            this.radioButton15.Text = "High";
             this.radioButton15.UseVisualStyleBackColor = true;
             this.radioButton15.CheckedChanged += new System.EventHandler(this.radioButton15_CheckedChanged);
             // 
@@ -346,9 +348,9 @@
             this.checkBox1.Location = new System.Drawing.Point(10, 46);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(105, 17);
+            this.checkBox1.Size = new System.Drawing.Size(72, 17);
             this.checkBox1.TabIndex = 6;
-            this.checkBox1.Text = "Модификатор 1";
+            this.checkBox1.Text = "Modifier 1";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
@@ -358,9 +360,9 @@
             this.checkBox2.Location = new System.Drawing.Point(339, 46);
             this.checkBox2.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(105, 17);
+            this.checkBox2.Size = new System.Drawing.Size(72, 17);
             this.checkBox2.TabIndex = 7;
-            this.checkBox2.Text = "Модификатор 2";
+            this.checkBox2.Text = "Modifier 2";
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
@@ -479,7 +481,7 @@
             this.Controls.Add(this.zedGraphControl1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = "Рост человека";
+            this.Text = "Fuzzy-Logic-Activity";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
