@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abueva_FuzzyLogic", "Abueva_FuzzyLogic\Abueva_FuzzyLogic.csproj", "{AB8FC086-E320-48A6-9773-857D42F41247}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB8FC086-E320-48A6-9773-857D42F41247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB8FC086-E320-48A6-9773-857D42F41247}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB8FC086-E320-48A6-9773-857D42F41247}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB8FC086-E320-48A6-9773-857D42F41247}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E1FB6137-DFF3-4A61-B99B-121B472BAC8F}
+	EndGlobalSection
+EndGlobal
