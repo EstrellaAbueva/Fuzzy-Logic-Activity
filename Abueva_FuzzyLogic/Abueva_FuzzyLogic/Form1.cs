@@ -11,16 +11,17 @@ using System.Windows.Forms;
 
 namespace Abueva_FuzzyLogic
 {
-    public partial class Form1 : Form
+    public partial class Abueva_FuzzyLogic : Form
     {
         FuzzyEngine fe;
         MembershipFunctionCollection strengthVacuum, dirt, newStrength;
         LinguisticVariable myStrengthVacuum, myDirt, myNewStrength;
         FuzzyRuleCollection myRules;
         
-        public Form1()
+        public Abueva_FuzzyLogic()
         {
             InitializeComponent();
+
         }
 
         public void setMembers()
