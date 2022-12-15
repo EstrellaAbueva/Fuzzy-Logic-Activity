@@ -8,12 +8,24 @@ Fuzzy Logic (FL) is a method of reasoning that resembles human reasoning. The ap
 The conventional logic block that a computer can understand takes precise input and produces a definite output as TRUE or FALSE, which is equivalent to human’s YES or NO.
 The inventor of fuzzy logic, Lotfi Zadeh, observed that unlike computers, the human decision making includes a range of possibilities between YES and NO, such as −
 
+```Modifier```
 
-* CERTAINLY YES
-* POSSIBLY YES
-* CANNOT SAY
-* POSSIBLY NO
-* CERTAINLY NO
+* Not
+* Very
+* Slightly
+
+```Property 1```
+
+* High
+* Average
+* Low
+
+```Union```
+
+* --
+* and
+* or
+
 
 The fuzzy logic works on the levels of possibilities of input to achieve the definite output.
 
