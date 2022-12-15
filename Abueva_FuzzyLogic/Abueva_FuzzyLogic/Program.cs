@@ -16,7 +16,7 @@ namespace Abueva_FuzzyLogic
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Abueva_FuzzyLogic());
+            Application.Run(new Form1());
         }
     }
 }

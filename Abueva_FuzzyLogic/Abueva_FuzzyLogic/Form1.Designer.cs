@@ -1,6 +1,6 @@
 ﻿namespace Abueva_FuzzyLogic
 {
-    partial class Abueva_FuzzyLogic
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -47,7 +47,7 @@
             // lbl_dirt
             // 
             this.lbl_dirt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_dirt.Location = new System.Drawing.Point(432, 207);
+            this.lbl_dirt.Location = new System.Drawing.Point(416, 207);
             this.lbl_dirt.Name = "lbl_dirt";
             this.lbl_dirt.Size = new System.Drawing.Size(100, 23);
             this.lbl_dirt.TabIndex = 26;
@@ -57,7 +57,7 @@
             // strength
             // 
             this.strength.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.strength.Location = new System.Drawing.Point(432, 142);
+            this.strength.Location = new System.Drawing.Point(416, 142);
             this.strength.Name = "strength";
             this.strength.Size = new System.Drawing.Size(100, 23);
             this.strength.TabIndex = 25;
@@ -67,7 +67,7 @@
             // 
             this.lbl_result.BackColor = System.Drawing.SystemColors.ControlLight;
             this.lbl_result.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_result.Location = new System.Drawing.Point(178, 352);
+            this.lbl_result.Location = new System.Drawing.Point(162, 352);
             this.lbl_result.Name = "lbl_result";
             this.lbl_result.Size = new System.Drawing.Size(459, 57);
             this.lbl_result.TabIndex = 24;
@@ -77,7 +77,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(174, 299);
+            this.label4.Location = new System.Drawing.Point(158, 299);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(340, 24);
             this.label4.TabIndex = 23;
@@ -85,7 +85,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(341, 247);
+            this.button3.Location = new System.Drawing.Point(325, 247);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(155, 31);
             this.button3.TabIndex = 22;
@@ -95,7 +95,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(594, 168);
+            this.button2.Location = new System.Drawing.Point(578, 168);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 21;
@@ -105,7 +105,7 @@
             // 
             // trackBar2
             // 
-            this.trackBar2.Location = new System.Drawing.Point(381, 168);
+            this.trackBar2.Location = new System.Drawing.Point(365, 168);
             this.trackBar2.Maximum = 100;
             this.trackBar2.Name = "trackBar2";
             this.trackBar2.Size = new System.Drawing.Size(195, 45);
@@ -116,7 +116,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(160, 168);
+            this.label3.Location = new System.Drawing.Point(144, 168);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 24);
             this.label3.TabIndex = 19;
@@ -125,7 +125,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(594, 104);
+            this.button1.Location = new System.Drawing.Point(578, 104);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 18;
@@ -137,7 +137,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(156, 104);
+            this.label2.Location = new System.Drawing.Point(140, 104);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(202, 24);
             this.label2.TabIndex = 17;
@@ -145,7 +145,7 @@
             // 
             // trackBar1
             // 
-            this.trackBar1.Location = new System.Drawing.Point(381, 101);
+            this.trackBar1.Location = new System.Drawing.Point(365, 101);
             this.trackBar1.Maximum = 100;
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(195, 45);
@@ -156,13 +156,13 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(77, 49);
+            this.label1.Location = new System.Drawing.Point(61, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(678, 25);
             this.label1.TabIndex = 15;
             this.label1.Text = " Fuzzy Logic to Control the Suck Strength of a Vacuum Cleaner";
             // 
-            // Abueva_FuzzyLogic
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -179,9 +179,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.label1);
-            this.Name = "Abueva_FuzzyLogic";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load_1);
+            this.Name = "Form1";
+            this.Text = "Abueva_FuzzyLogic";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);

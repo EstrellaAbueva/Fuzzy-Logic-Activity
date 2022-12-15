@@ -11,51 +11,57 @@ using System.Windows.Forms;
 
 namespace Abueva_FuzzyLogic
 {
-    public partial class Abueva_FuzzyLogic : Form
+    public partial class Form1 : Form
     {
         FuzzyEngine fe;
         MembershipFunctionCollection strengthVacuum, dirt, newStrength;
         LinguisticVariable myStrengthVacuum, myDirt, myNewStrength;
         FuzzyRuleCollection myRules;
         
-        public Abueva_FuzzyLogic()
+        public Form1()
         {
             InitializeComponent();
-
         }
 
         public void setMembers()
         {
+            strengthVacuum = new MembershipFunctionCollection();
             strengthVacuum.Add(new MembershipFunction("Slow", 0.0, 0.0, 10.0, 30.0));
             strengthVacuum.Add(new MembershipFunction("Medium", 25.0, 45.0, 50.0, 65.0));
             strengthVacuum.Add(new MembershipFunction("Fast", 60.0, 65.0, 100.0, 100.0));
-            myStrengthVacuum = new LinguisticVariable("STRENGTH OF VACUUMING", strengthVacuum);
+            myStrengthVacuum = new LinguisticVariable("STRENGTH", strengthVacuum);
 
             dirt = new MembershipFunctionCollection();
             dirt.Add(new MembershipFunction("Less", 0.0, 0.0, 10.0, 30.0));
             dirt.Add(new MembershipFunction("Moderate", 25.0, 45.0, 50.0, 65.0));
             dirt.Add(new MembershipFunction("High", 60.0, 65.0, 100.0, 100.0));
-            myDirt = new LinguisticVariable("DIRT IN THE AREA", dirt);
+            myDirt = new LinguisticVariable("DIRT", dirt);
 
             newStrength = new MembershipFunctionCollection();
             newStrength.Add(new MembershipFunction("Slow", 0.0, 0.0, 10.0, 30.0));
             newStrength.Add(new MembershipFunction("Medium", 25.0, 45.0, 50.0, 65.0));
             newStrength.Add(new MembershipFunction("Fast", 60.0, 65.0, 100.0, 100.0));
-            myNewStrength = new LinguisticVariable("NEW STRENGTH OF VACUUMING", newStrength);
+            myNewStrength = new LinguisticVariable("VACUUMING", newStrength);
         }
 
         public void setRules()
         {
             myRules = new FuzzyRuleCollection();
-            myRules.Add(new FuzzyRule("IF (DIRT IN THE AREA IS Less) AND (STRENGTH OF VACUUMING IS Slow)  THEN NEW STRENGTH OF VACUUMING IS Slow"));
-            myRules.Add(new FuzzyRule("IF (DIRT IN THE AREA IS Less) AND (STRENGTH OF VACUUMING IS Medium)  THEN NEW STRENGTH OF VACUUMING IS Slow"));
-            myRules.Add(new FuzzyRule("IF (DIRT IN THE AREA IS Less) AND (STRENGTH OF VACUUMING IS Fast)  THEN NEW STRENGTH OF VACUUMING IS Medium"));
-            myRules.Add(new FuzzyRule("IF (DIRT IN THE AREA IS Moderate) AND (STRENGTH OF VACUUMING IS Slow)  THEN NEW STRENGTH OF VACUUMING IS Medium"));
-            myRules.Add(new FuzzyRule("IF (DIRT IN THE AREA IS Moderate) AND (STRENGTH OF VACUUMING IS Medium)  THEN NEW STRENGTH OF VACUUMING IS Medium"));
-            myRules.Add(new FuzzyRule("IF (DIRT IN THE AREA IS Moderate) AND (STRENGTH OF VACUUMING IS Fast)  THEN NEW STRENGTH OF VACUUMING IS Fast"));
-            myRules.Add(new FuzzyRule("IF (DIRT IN THE AREA IS High) AND (STRENGTH OF VACUUMING IS Slow)  THEN NEW STRENGTH OF VACUUMING IS Medium"));
-            myRules.Add(new FuzzyRule("IF (DIRT IN THE AREA IS High) AND (STRENGTH OF VACUUMING IS Medium)  THEN NEW STRENGTH OF VACUUMING IS Fast"));
-            myRules.Add(new FuzzyRule("IF (DIRT IN THE AREA IS High) AND (STRENGTH OF VACUUMING IS Fast)  THEN NEW STRENGTH OF VACUUMING IS Fast"));
+            myRules.Add(new FuzzyRule("IF (DIRT IS Less) AND (STRENGTH IS Slow)  THEN VACUUMING IS Slow"));
+            myRules.Add(new FuzzyRule("IF (DIRT IS Less) AND (STRENGTH IS Medium)  THEN VACUUMING IS Slow"));
+            myRules.Add(new FuzzyRule("IF (DIRT IS Less) AND (STRENGTH IS Fast)  THEN VACUUMING IS Medium"));
+            myRules.Add(new FuzzyRule("IF (DIRT IS Moderate) AND (STRENGTH IS Slow)  THEN VACUUMING IS Medium"));
+            myRules.Add(new FuzzyRule("IF (DIRT IS Moderate) AND (STRENGTH IS Medium)  THEN VACUUMING IS Medium"));
+            myRules.Add(new FuzzyRule("IF (DIRT IS Moderate) AND (STRENGTH IS Fast)  THEN VACUUMING IS Fast"));
+            myRules.Add(new FuzzyRule("IF (DIRT IS High) AND (STRENGTH IS Slow)  THEN VACUUMING IS Medium"));
+            myRules.Add(new FuzzyRule("IF (DIRT IS High) AND (STRENGTH IS Medium)  THEN VACUUMING IS Fast"));
+            myRules.Add(new FuzzyRule("IF (DIRT IS High) AND (STRENGTH IS Fast)  THEN VACUUMING IS Fast"));
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            setMembers();
+            setRules();
         }
 
         public void setFuzzyEngine()
@@ -66,13 +72,7 @@ namespace Abueva_FuzzyLogic
             fe.LinguisticVariableCollection.Add(myNewStrength);
             fe.FuzzyRuleCollection = myRules;
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            setMembers();
-            setRules();
-        }
-
+        
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
             strength.Text = trackBar1.Value.ToString();
@@ -108,7 +108,7 @@ namespace Abueva_FuzzyLogic
         private void button3_Click(object sender, EventArgs e)
         {
             setFuzzyEngine();
-            fe.Consequent = "NEW STRENGTH OF VACUUMING";
+            fe.Consequent = "VACUUMING";
             lbl_result.Text = "" + fe.Defuzzify();
         }
 
@@ -127,7 +127,7 @@ namespace Abueva_FuzzyLogic
             myStrengthVacuum.InputValue = trackBar1.Value;
             myStrengthVacuum.Fuzzify("Slow");
             myDirt.InputValue = trackBar2.Value;
-            myDirt.Fuzzify("Less");
+            myDirt.Fuzzify("High");
         }
     }
 }
